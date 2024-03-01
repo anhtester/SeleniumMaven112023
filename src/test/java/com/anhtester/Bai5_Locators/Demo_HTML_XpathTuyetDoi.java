@@ -37,9 +37,9 @@ public class Demo_HTML_XpathTuyetDoi {
         driver.findElement(By.xpath("/html/body/aside/ul/li[3]/a/span")).click();
 
         //Thread.sleep(1000);
-        driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[2]/a[1]")).click();
+        driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[1]/a[1]")).click();
 
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
         driver.quit();
     }
 }
