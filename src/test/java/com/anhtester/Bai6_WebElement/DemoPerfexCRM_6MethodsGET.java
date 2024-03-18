@@ -30,8 +30,8 @@ public class DemoPerfexCRM_6MethodsGET {
         String font_size = driver.findElement(By.xpath("//button[normalize-space()='Login']")).getCssValue("font-size");
         String font_weight = driver.findElement(By.xpath("//button[normalize-space()='Login']")).getCssValue("font-weight");
 
-        System.out.println(backgroundColor);
-        System.out.println(color);
+        System.out.println("backgroundColor: " + backgroundColor);
+        System.out.println("color: " + color);
         System.out.println(font_size);
         System.out.println(font_weight);
 
@@ -45,8 +45,8 @@ public class DemoPerfexCRM_6MethodsGET {
         System.out.println("X: " + point.getX());
         System.out.println("Y: " + point.getY());
 
-        System.out.println(driver.findElement(By.xpath("//button[normalize-space()='Login']")).getAccessibleName());
-        System.out.println(driver.findElement(By.xpath("//button[normalize-space()='Login']")).getAriaRole());
+//        System.out.println(driver.findElement(By.xpath("//button[normalize-space()='Login']")).getAccessibleName());
+//        System.out.println(driver.findElement(By.xpath("//button[normalize-space()='Login']")).getAriaRole());
 
         driver.get("https://crm.anhtester.com/admin/authentication");
         Thread.sleep(1000);
