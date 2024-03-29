@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Regression Test" verbose="1">
+    <test name="Login Test on Local">
+        <classes>
+            <class name="com.anhtester.Bai9_TestNGFramework.DemoTestNG">
+                <methods>
+                    <include name="testLoginCRM"/>
+                </methods>
+            </class>
+            <class name="com.anhtester.Bai9_TestNGFramework.RunTestNG">
+                <methods>
+                    <exclude name="testGoogleSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
